@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemCountryConstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewFlagItem"
+            android:layout_width="156dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="29dp"
+            android:contentDescription="Flag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/textViewNameItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="39dp"
+            android:text="Item Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFlagItem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewRegionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="31dp"
+            android:text="Item Region"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFlagItem"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameItem" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
